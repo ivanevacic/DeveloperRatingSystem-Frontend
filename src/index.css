@@ -1,5 +1,13 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+
+	width: 100%;
+	background-image: url(images/bgIndex.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
+ 

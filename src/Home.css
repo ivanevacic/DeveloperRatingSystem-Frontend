@@ -1,0 +1,161 @@
+	.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%);
+	text-align: center;
+	color: white;
+}
+
+.cmpName{
+	margin: 20px;
+	font-size: 4em;
+}
+
+.viewDev{
+	margin: 10% 5% 0 5%;
+	font-size: 1.5em;
+	display: inline-flex;
+	align-items: center;
+}
+
+.addDev{
+	margin: 7% 5% 20% 5%;
+	font-size: 1.5em;
+	display: inline-flex;
+	align-items: center;
+}
+
+/* CSS-FLEXBOX */
+
+footer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background-color: white;
+	padding: 10px;
+}
+
+.copyright{
+	font-size: 1.2em;
+	/* margin: 0 20px;
+	position: absolute;
+	left: 2%; */
+}
+
+.socialIcons{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0 20px;
+}
+
+img{
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+}
+
+img:hover{
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.dev{
+	margin: 0 3%;
+}
+
+.devno{
+	font-size: 1.2em;
+	margin: 0 11%;
+	text-align: center;
+	line-height: 60px;
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	border: 2px ridge black;
+}
+
+/* CSS-FLEXBOX */
+
+/* CSS-GRID */
+
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"copyright socialIcons devno";
+	justify-content: start;
+}
+
+.copyright{
+	grid-area: copyright;
+	justify-self: start;
+}
+
+.socialIcons{
+	grid-area: socialIcons;
+	justify-self: center;
+}
+
+.dev{
+	grid-area: devno;
+	justify-self: start;
+	line-height: 60px;
+	display: inline-flex;
+	align-items: center;
+	font-weight: 900;
+}
+
+.devno{
+	border: 3px solid black;
+	height: 60px;
+	width: 60px;
+	border-radius: 30px;
+	text-align: center;
+	margin: 5px;
+}
+/* CSS-GRID */
+
+
+
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
