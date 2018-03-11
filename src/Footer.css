@@ -1,0 +1,62 @@
+.socialIcons img{
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+}
+
+.socialIcons img:hover{
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+footer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background-color: white;
+	padding: 10px;
+}
+
+/* .copyright{
+	font-size: 1.2em;
+	margin: 0 20px;
+	position: absolute;
+	left: 2%;
+} */
+
+.socialIcons{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 20px;
+}
+
+.dev{
+	font-size: 1.2em;
+	margin: 0 20px;
+	position: absolute;
+	right: 2%;
+	bottom: 2%;
+}
+
+.addDev{
+}
+
+.addDev img{
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+}
+
+.Adddev img:hover{
+	cursor: pointer;
+	transform: scale(1.2);
+}
