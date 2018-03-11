@@ -1,8 +1,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
-
+	font-family: 'Expletus Sans', cursive, sans-serif;
+	/* overflow-x: hidden; */
 	width: 100%;
 	background-image: url(images/bgIndex.jpg);
 	background-position: center;

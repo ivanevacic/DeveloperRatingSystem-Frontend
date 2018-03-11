@@ -1,0 +1,104 @@
+#devCard{
+	width: 250px;
+	height: 300px;
+	background: linear-gradient(300deg, rgba(0,0,0,0.7), rgba(220,220,220,1));
+}
+
+#devPic{
+	height: 100px;
+	width: 100px;
+	margin: 0 50px;
+}
+
+#devContent{
+	padding: 10px;
+}
+
+#link{
+	color: inherit;
+}
+
+#name, #ratings, #jobTitle, #prLink{
+	padding: 5px;
+	font-size: 1.2em;
+}
+
+/* RATINGS DISPLAY */
+
+#first1:before  {
+	content: "\2605";
+	position: absolute;
+}
+
+#first2:before  {
+	content: "\2605";
+	position: absolute;
+}
+
+#first3:before  {
+	content: "\2605";
+	position: absolute;
+}
+
+#first4:before  {
+	content: "\2605";
+	position: absolute;
+}
+
+#first5:before  {
+	content: "\2605";
+	position: absolute;
+}
+
+#second2:before  {
+	content: "\2605";
+	position: absolute;
+}
+
+#second3:before  {
+	content: "\2605";
+	position: absolute;
+}
+
+#second4:before  {
+	content: "\2605";
+	position: absolute;
+}
+
+#second5:before  {
+	content: "\2605";
+	position: absolute;
+}
+
+#third3:before  {
+	content: "\2605";
+	position: absolute;
+}
+
+#third4:before  {
+	content: "\2605";
+	position: absolute;
+}
+
+#third5:before  {
+	content: "\2605";
+	position: absolute;
+}
+
+#fourth4:before  {
+	content: "\2605";
+	position: absolute;
+}
+
+#fourth5:before  {
+	content: "\2605";
+	position: absolute;
+}
+
+#fifth5:before  {
+	content: "\2605";
+	position: absolute;
+}
+
+/* RATINGS DISPLAY */
+
