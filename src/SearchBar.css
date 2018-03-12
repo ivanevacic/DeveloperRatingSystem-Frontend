@@ -1,8 +1,9 @@
 .searched{
 	background-color: white;
 	z-index: 2;
-	width: 100%;
+	width: 30%;
 	display: inline-flex;
+	justify-content: flex-end;
 	align-content: center;
 }
 

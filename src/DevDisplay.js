@@ -31,9 +31,14 @@ class DevDisplay extends Component {
 		}
 		else {
 			return (
-				<div className="Displaying">
-					<SearchBar className="SearchBar" searchChange={this.onSearchChange}/>
-					<Viewboard className="Viewboard" DevelopersData={filteredDevs}/>
+				<div>
+					<div className="profiles">
+						<h1> DEVELOPER PROFILES </h1>
+						<SearchBar className="SearchBar" searchChange={this.onSearchChange}/>
+					</div>	
+					<div className="Displaying">
+						<Viewboard className="Viewboard" DevelopersData={filteredDevs}/>
+					</div>
 				</div>
 			);
 		}
