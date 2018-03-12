@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import './App.css'; 
 import Logo from './Logo';
 import Cname from './Cname';
-import Viewing from './Viewing';
-import Adding from './Adding';
+import LoginButton from './LoginButton';
 import Footer from './Footer';
 import Login from './Login';
+import Signup from './Signup';
 import DevDisplay from './DevDisplay';
+import Adding from './Adding';
 import Adddev from './Adddev';
 import 'tachyons';
 
@@ -31,20 +32,28 @@ class App extends Component {
 			<div>
 				<Logo onRouteChange={this.onRouteChange} />
 				{ this.state.route === 'welcome'
-				? <div className="typewriter container">
-					<Cname />
-					<Viewing  onRouteChange={this.onRouteChange}/>
-					<Adding onRouteChange={this.onRouteChange}/>
-				</div>
+				? <div>
+					 <div className="typewriter container">
+						<Cname />
+					 </div>
+					 <LoginButton onRouteChange={this.onRouteChange}/>
+				  </div>	
 				: ( 
 					this.state.route === 'login'
-					? <Login onRouteChange={this.onRouteChange}/>
-					: (
-						this.state.route === 'adddev'
-						? <Adddev />
-						: <DevDisplay onRouteChange={this.onRouteChange}/>
+						? <Login onRouteChange={this.onRouteChange}/>
+						: (
+							this.state.route === 'signup'
+							? <Signup onRouteChange={this.onRouteChange} />
+							: (
+								this.state.route === 'adddev'
+								? <Adddev />
+								: <div>
+									<DevDisplay onRouteChange={this.onRouteChange}/>
+									<Adding onRouteChange={this.onRouteChange}/>
+								</div>
+							)
+						)
 					)
-				)
 				}
 				<Footer onRouteChange={this.onRouteChange}/>
 			</div>

@@ -4,16 +4,16 @@
 }
 
 .typewriter h1 {
-  color: #fff;
+  color: rgba(0,0,0,1);
   font-family: 'Expletus Sans', cursive, monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
+  border-right: .15em solid transparent; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
     typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+    blink-caret .5s step-end 8;
 }
 
 /* The typing effect */
@@ -26,4 +26,76 @@
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange }
+}
+
+/* HIGLIGHT COLOR */
+
+#hHighlighter1:hover{
+  cursor: pointer;
+  color: #4885ed ;
+}
+
+#hHighlighter2:hover{
+  cursor: pointer;
+  color: #4885ed ;
+}
+
+#hHighlighter3:hover{
+  cursor: pointer;
+  color: #4885ed ;
+}
+
+#hHighlighter4:hover{
+  cursor: pointer;
+  color: #db3236 ;
+}
+
+#hHighlighter5:hover{
+  cursor: pointer;
+  color: #db3236 ;
+}
+
+#hHighlighter6:hover{
+  cursor: pointer;
+  color: #db3236 ;
+}
+
+#hHighlighter7:hover{
+  cursor: pointer;
+  color: #f4c20d ;
+}
+
+#hHighlighter8:hover{
+  cursor: pointer;
+  color: #f4c20d ;
+}
+
+#hHighlighter9:hover{
+  cursor: pointer;
+  color: #f4c20d   ;
+}
+
+#hHighlighter10:hover{
+  cursor: pointer;
+  color: #4885ed   ;
+}
+
+#hHighlighter11:hover{
+  cursor: pointer;
+  color: #4885ed   ;
+}
+
+#hHighlighter12:hover{
+  cursor: pointer;
+  color: #4885ed   ;
+}
+
+#hHighlighter13:hover{
+  cursor: pointer;
+  color: #3cba54 ;
+}
+
+#hHighlighter14:hover{
+  cursor: pointer;
+  color: #3cba54 ;
 }
